@@ -2,7 +2,8 @@ package = "itorch"
 version = "scm-1"
 
 source = {
-   url = "git://github.com/facebook/iTorch.git",
+   url = "git://github.com/nhynes/iTorch.git",
+   branch = "custom"
 }
 
 description = {
