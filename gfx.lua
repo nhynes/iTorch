@@ -217,7 +217,7 @@ if ok then
    local _progress = xlua.progress
    xlua.progress = function(i, n)
       -- make progress bar really slow in itorch
-      if os.clock() - last > 1 or i == n then
+      if os.clock() - last > 0.5 or i == n then
          local outstr = ''
          io.write = function(s)
             if s ~= '\r' and s ~= '\n' then
